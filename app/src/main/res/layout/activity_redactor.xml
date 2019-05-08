@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:foregroundGravity="center"
+            android:src="@drawable/save_white_24dp"
+            android:layout_margin="16dp"/>
+    <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".Redactor">
+
+        <EditText
+                android:id="@+id/add_edit_charter"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:hint="Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:id="@+id/add_edit_rule"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:hint="Rule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:id="@+id/add_edit_details"
+                android:layout_marginTop="10dp"
+                android:inputType="textMultiLine"
+                android:gravity="start"
+                android:textSize="15sp"
+                android:hint="Details"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+
+    </LinearLayout>
+</FrameLayout>
